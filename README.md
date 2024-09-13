@@ -1,6 +1,8 @@
 # EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED INTERFACE WITH ARM CONTROLLER AND PROTEUS 
-## Aim: To Interface a Digital output (LED) and Digital input (Pushbutton) to ARM development board , and simulate it in Proteus 
-## Components required: STM32 CUBE IDE, Proteus 8 simulator .
+## Aim:
+To Interface a Digital output (LED) and Digital input (Pushbutton) to ARM development board , and simulate it in Proteus 
+## Components required: 
+STM32 CUBE IDE, Proteus 8 simulator .
 ## Theory 
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
@@ -71,17 +73,24 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
 
 
 ## STM 32 CUBE PROGRAM :
+~~~
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+  {
+	  if((GPIO_Pin == GPIO_PIN_1))
+	  {
+		  HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_2);
+	  }
 
-
-
+  }
+~~~
 
 ## Output screen shots of proteus  :
 
-
-
+![image](https://github.com/user-attachments/assets/259d1d12-caf6-4219-b30f-3ab44884f9d9)
 
 ## Proteus layout(Add pdf screen shot of circuit here)
- 
+ ![image](https://github.com/user-attachments/assets/c22ffbc7-b1af-4cc2-af45-c4bce72b50e6)
+
  
  
  
